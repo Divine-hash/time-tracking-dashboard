@@ -22,6 +22,11 @@
   --fs-400: calc(25em / 16);
   --fs-300: calc(20em /  16);
   --fs-200: 1em;
+
+  /* font-weight */
+  --fw-500: 500;
+  --fw-400: 400;
+  --fw-300: 300;
 }
 
 
@@ -65,4 +70,52 @@ body {
   font-family: 'Rubik', sans-serif;
   border: 1px solid red;
   block-size: 100vh;
+  color: var(--pale-blue);
+  color: #fff;
 }
+
+
+
+
+/*
+=================================
+  UTILITIES
+=================================
+*/
+/* general */
+.flex {
+  display: flex;
+  gap: var(--gap, 1em);
+}
+
+.flex-spaced {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-block { display: block; }
+
+/* Backgrounds */
+.bg-blue { background-color: var(--blue); }
+.bg-dark-blue { background-color: var(--dark-blue); }
+.bg-very-dark-blue { background-color: var(--very-dark-blue); }
+.bg-light-red { background-color: var(--light-red); }
+.bg-soft-blue { background-color: var(--soft-blue); }
+.bg-red-study { background-color: var(--light-red-study); }
+.bg-lime-green { background-color: var(--lime-green); }
+.bg-violet { background-color: var(--violet); }
+.bg-soft-orange { background-color: var(--soft-orange); }
+
+/* Typography */
+.text-pale-blue { color: var(--pale-blue); }
+.text-white { color: #fff; }
+
+.fw-500 { font-weight: 500; }
+.fw-400 { font-weight: 400; }
+.fw-300 { font-weight: 300; }
+
+/*
+=================================
+  COMPONENTS
+=================================
+*/
