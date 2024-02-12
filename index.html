@@ -18,67 +18,127 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="bg-dark-blue">
+<body>
+  <main class="container grid">
+    <div class="user bg-dark-blue">
+      <div class="user__profile bg-blue flex">
+        <div class="user__image">
+          <img src="./images/image-jeremy.png" alt="Jeremy's profile photo">
+        </div>
+        <h1 class="text-pale-blue fs-200 fw-400">Report for
+          <span class="d-block text-white fw-300 fs-400">Jeremy Robson</span>
+        </h1>
+      </div>
+      <div class="user__buttons flex fs-200">
+        <button type="button" class="bg-dark-blue text-pale-blue">Daily</button>
+        <button type="button" class="bg-dark-blue text-pale-blue active">Weekly</button>
+        <button type="button" class="bg-dark-blue text-pale-blue">Monthly</button>
+      </div>
+    </div>
 
-  Report for
-  Jeremy Robson
+    <div class="stats stats-work bg-light-red flex text-white">
+      <div></div>
+      <div class="stats__info bg-dark-blue">
+        <div class="flex">
+          <h2 class="fs-300 fw-400">work</h2>
+          <button type="button" class="stats__bntton bg-transparent">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div class="flex">
+          <p class="fs-500 fw-300">32hrs</p>
+          <p class="text-pale-blue">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </div>
 
-  Daily
-  Weekly
-  Monthly
+    <div class="stats stats-play bg-soft-blue flex text-white">
+      <div></div>
+      <div class="stats__info bg-dark-blue">
+        <div class="flex">
+          <h2 class="fs-300 fw-400">Play</h2>
+          <button type="button" class="stats__bntton bg-transparent">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div class="flex">
+          <p class="fs-500 fw-300">10hrs</p>
+          <p class="text-pale-blue">Last Week - 8hrs</p>
+        </div>
+      </div>
+    </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+    <div class="stats stats-study bg-red-study flex text-white">
+      <div></div>
+      <div class="stats__info bg-dark-blue">
+        <div class="flex">
+          <h2 class="fs-300 fw-400">Study</h2>
+          <button type="button" class="stats__bntton bg-transparent">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div class="flex">
+          <p class="fs-500 fw-300">4hrs</p>
+          <p class="text-pale-blue">Last Week - 7hrs</p>
+        </div>
+      </div>
+    </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <div class="stats stats-exercise bg-lime-green flex text-white">
+      <div></div>
+      <div class="stats__info bg-dark-blue">
+        <div class="flex">
+          <h2 class="fs-300 fw-400">Exercise</h2>
+          <button type="button" class="stats__bntton bg-transparent">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div class="flex">
+          <p class="fs-500 fw-300">4hrs</p>
+          <p class="text-pale-blue">Last Week - 5hrs</p>
+        </div>
+      </div>
+    </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+    <div class="stats stats-social bg-violet flex text-white">
+      <div></div>
+      <div class="stats__info bg-dark-blue">
+        <div class="flex">
+          <h2 class="fs-300 fw-400">Social</h2>
+          <button type="button" class="stats__bntton bg-transparent">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div class="flex">
+          <p class="fs-500 fw-300">5hrs</p>
+          <p class="text-pale-blue">Last Week - 10hrs</p>
+        </div>
+      </div>
+    </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+    <div class="stats stats-care bg-soft-orange flex text-white">
+      <div></div>
+      <div class="stats__info bg-dark-blue">
+        <div class="flex">
+          <h2 class="fs-300 fw-400">Self Care</h2>
+          <button type="button" class="stats__bntton bg-transparent">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div class="flex">
+          <p class="fs-500 fw-300">2hrs</p>
+          <p class="text-pale-blue">Last Week - 2hrs</p>
+        </div>
+      </div>
+    </div>
+  </main>
 
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </footer>
 </body>
 </html>
